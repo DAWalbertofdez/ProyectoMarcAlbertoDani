@@ -1,0 +1,319 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+    MORENITO |  Tu tienda ciclista online
+
+</title>
+
+    <link type="image/x-icon" href="..\Content\images\favicon.ico" rel="icon">
+    <link type="image/x-icon" href="..\Content\images\favicon.ico" rel="shortcut icon">
+
+
+    <link href="..\Content\morenito.css" type="text/css" rel="stylesheet" media="all">
+    <link href="..\tweet\jquery.tweet.css" type="text/css" rel="stylesheet" media="all">
+
+    <script src="..\Scripts\json2.js" type="text/javascript"></script>
+    <script src="..\Scripts\jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script type="text/javascript" src="..\Scripts\jquery.easing.1.3.js"></script>
+    <script src="..\Scripts\preloadCSSImages.js" type="text/javascript"></script>
+    <script src="..\Scripts\jquery.dimensions.min.js" type="text/javascript"></script>
+    <script src="..\Scripts\jquery.jcarousellite.min.js" type="text/javascript"></script>
+
+    <script src="..\Scripts\basico.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+       function validarBuscador() {
+       var palabra= trim($("#palabra").val());
+           if (palabra== '') {
+               alert("No ha introducido ning\u00FAn t\u00E9rmino en el buscador.\n");
+               return false;
+           }
+          var simpleUrl = "/Tienda/Buscar" + "/" + palabra;
+        document.location = simpleUrl;
+        return false;
+       }
+   </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+	        menu(8);
+        });
+    </script>
+</head>
+<body>
+
+
+
+    <div class="cabecera">
+        <h1>
+           <a href="..\index.htm">
+	            <img alt="Morenito" src="..\Content\images\logo.jpg">
+	       </a>
+        </h1>
+
+        <div style="float:right; position:relative; top:-34px; width:76px; ">
+             <a href="http://www.facebook.com/bicicletas.morenito" target="_blank" style="display:block; float:left;">
+	                <img alt="facebook" width="34" src="..\Content\images\facebook.png">
+	           </a>
+
+               <a href="http://www.twitter.com/bicismorenito" target="_blank" style="display:block; float:left; margin-left:5px;">
+	                <img alt="Morenito" width="34" src="..\Content\images\twitter.png">
+	           </a>
+        </div>
+    </div>
+    <div class="ajuste">
+        <div class="menu">
+            <a href="..\index.htm" id="m_0" title="Inicio"></a>
+            <a href="..\Tienda\Index.htm" id="m_1" title="Tienda online"></a>
+            <a href="..\Morenito\Contacta.htm" id="m_4" title="Contacta"></a>
+            <a href="..\Tienda\Outlet.htm" id="m_3" title="Outlet"></a>
+            <a href="..\Tienda\Ofertas.htm" id="m_9" title="Ofertas"></a>
+            <a href="..\Tienda\NovedadesMorenito.htm" id="m_10" title="Novedades"></a>
+            <a href="..\Morenito\QuienesSomos.htm" id="m_2" title="Quiénes somos"></a>
+            <a href="..\Morenito\NuestrasTiendas.htm" id="m_5" title="Nuestras tiendas"></a>
+            <a href="..\Consejos.htm" id="m_7" title="Consejos"></a>
+            <a href="Index.htm" id="m_8" title="Bicis Robadas"></a>
+
+
+        </div>
+
+
+        <div class="buscador">
+
+        <input type="text" id="palabra" value="Escribe aquí tu búsqueda" onclick="this.value=''" onkeypress="return clickenter(event)">
+                    <select name="categoriasList">
+                        <option>Productos
+                    </select>
+                    <input type="button" class="buscar" value="" id="botonBuscar" onclick="return validarBuscador()">
+
+        </div>
+    </div>
+
+
+
+    <div class="interior100">
+    	<div class="ajuste"><h2>BICIS ROBADAS, <span class="gris">Aquí se supone que encontraras tu bicicleta</span></h2></div>
+    </div>
+    <div class="ajusteContacto">
+        <div class="contTiendas">
+            <div class="noticias">
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/105/rebajas?pag=2"><img src="/Admin/Contents/images\0yilav4b.jpg" alt="REBAJAS" title="PRIMER ANUNCIO">ANUNCIO PRUEBA</a>
+                	        <p><span class="fontSize10">fecha 1</span><br>
+					        <a href="/Noticias/Index/105/rebajas?pag=2">ANUNCIO 1</a>
+					        <br>
+					        PRIMER ANUNCIO PRIMER ANUNCIO PRIMER ANUNCIO &nbsp;<a href="/Noticias/Index/105/rebajas?pag=2">(ampliar)</a></p>
+								</div><!-- Listado de anuncios-->
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/103/xxii-marcha-caminos-de-la-sierra-alpedrete?pag=2"><img src="/Admin/Contents/images\vb31h3qa.jpg" alt="XXII MARCHA CAMINOS DE LA SIERRA ALPEDRETE" title="XXII MARCHA CAMINOS DE LA SIERRA ALPEDRETE"></a>
+                	        <p><span class="fontSize10">fecha 2/span><br>
+					        <a href="/Noticias/Index/103/xxii-marcha-caminos-de-la-sierra-alpedrete?pag=2">XXII MARCHA CAMINOS DE LA SIERRA ALPEDRETE</a>
+					        <br>
+					        Dorsales ya en Morenito y aprovecha el Black Weekend &nbsp;<a href="/Noticias/Index/103/xxii-marcha-caminos-de-la-sierra-alpedrete?pag=2">(ampliar)</a></p>
+                        </div><!-- noticiaListado-->
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/104/black-friday-en-morenito?pag=2"><img src="/Admin/Contents/images\mbgkj3i5.jpg" alt="BLACK FRIDAY EN MORENITO" title="BLACK FRIDAY EN MORENITO"></a>
+                	        <p><span class="fontSize10">miércoles, 25 de noviembre de 2015</span><br>
+					        <a href="/Noticias/Index/104/black-friday-en-morenito?pag=2">BLACK FRIDAY EN MORENITO</a>
+					        <br>
+					        26,27 Y 28 DE NOVIEMBRE DE 2015&nbsp;<a href="/Noticias/Index/104/black-friday-en-morenito?pag=2">(ampliar)</a></p>
+                        </div><!-- noticiaListado-->
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/101/liquidacion-por-pr-ximo-traslado?pag=2"><img src="/Admin/Contents/images\xdoqpi4m.jpg" alt="LIQUIDACION POR PRÓXIMO TRASLADO" title="LIQUIDACION POR PRÓXIMO TRASLADO"></a>
+                	        <p><span class="fontSize10">lunes, 19 de octubre de 2015</span><br>
+					        <a href="/Noticias/Index/101/liquidacion-por-pr-ximo-traslado?pag=2">LIQUIDACION POR PRÓXIMO TRASLADO</a>
+					        <br>
+					        FUERA STOCKS ¡¡¡&nbsp;<a href="/Noticias/Index/101/liquidacion-por-pr-ximo-traslado?pag=2">(ampliar)</a></p>
+                        </div><!-- noticiaListado-->
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/100/bolsa-de-trabajo-morenito-villalba?pag=2"><img src="/Admin/Contents/images\4ua42koo.jpg" alt="Bolsa de Trabajo Morenito Villalba" title="Bolsa de Trabajo Morenito Villalba"></a>
+                	        <p><span class="fontSize10">martes, 15 de septiembre de 2015</span><br>
+					        <a href="/Noticias/Index/100/bolsa-de-trabajo-morenito-villalba?pag=2">Bolsa de Trabajo Morenito Villalba</a>
+					        <br>
+					        &nbsp;<a href="/Noticias/Index/100/bolsa-de-trabajo-morenito-villalba?pag=2">(ampliar)</a></p>
+                        </div><!-- noticiaListado-->
+
+                        <div class="noticiaListado">
+                 	        <a href="/Noticias/Index/99/xxiii-duatlon-popular?pag=2"><img src="/Admin/Contents/images\5tl3ry3m.jpg" alt="XXIII Duatlon Popular" title="XXIII Duatlon Popular"></a>
+                	        <p><span class="fontSize10">viernes, 4 de septiembre de 2015</span><br>
+					        <a href="/Noticias/Index/99/xxiii-duatlon-popular?pag=2">XXIII Duatlon Popular</a>
+					        <br>
+					        Ven al Duathlon de Alpedrete el próximo 19 de septiembre&nbsp;<a href="/Noticias/Index/99/xxiii-duatlon-popular?pag=2">(ampliar)</a></p>
+                        </div><!-- noticiaListado-->
+
+                <div class="pag">
+                    <a href="/Noticias/Index?pag=1">(anterior)</a> Pag 2 de 3
+
+                    <a href="/Noticias/Index?pag=3">(siguiente)</a>
+                </div>
+            </div><!--noticias -->
+            <div class="noticias" id="not">
+
+<ul >
+			
+					<li id="li_1" >
+		<!--<label class="description" for="element_1">Nombre de la bicicleta</label>-->
+		<a>Nombre de la bicicleta</a>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>				
+<br>
+		<li id="li_3" >
+		<!--<label class="description" for="element_3">Fecha del robo </label>-->
+		<a>Fecha del robo</a>
+		<span>
+			<input id="element_3_1" name="element_3_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_3_1">MM</label>
+		</span>
+		<span>
+			<input id="element_3_2" name="element_3_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_3_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_3_3">YYYY</label>
+		</span>
+		<script type="text/javascript">
+			Calendar.setup({
+			inputField	 : "element_3_3",
+			baseField    : "element_3",
+			displayArea  : "calendar_3",
+			button		 : "cal_img_3",
+			ifFormat	 : "%B %e, %Y",
+			onSelect	 : selectDate
+			});
+		</script>
+		 
+		</li>	
+<br>
+		<li id="li_4" >
+		<!--<label class="description" for="element_4">Ubicación del robo </label>-->
+		<a>Ubicación del robo</a>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_6" >
+		<!--<label class="description" for="element_6">Marca </label>-->
+		<a>Marca</a>
+		<div>
+			<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_7" >
+		<!--<label class="description" for="element_7">Modelo </label>-->
+		<a>Modelo</a>
+		<div>
+			<input id="element_7" name="element_7" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_8" >
+		<!--<label class="description" for="element_8">Color </label>-->
+		<a>Color</a>
+		<div>
+			<input id="element_8" name="element_8" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_9" >
+		<!--<label class="description" for="element_9">Antigüedad</label>-->
+		<a>Antigüedad</a>
+		<div>
+			<input id="element_9" name="element_9" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_11" >
+		<!--<label class="description" for="element_11">Numero de serie</label>-->
+		<a>Numero de serie</a>
+		<div>
+			<input id="element_11" name="element_11" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		
+<br>
+		<li id="li_13" >
+		<!--<label class="description" for="element_13">Compensación</label>-->
+		<a>Compensación</a>
+		<div>
+			<input id="element_13" name="element_13" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+<br>
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="54831" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+            </div><!--noticias -->
+        </div><!--contTiendas -->
+        </div><!--contContacto -->
+
+
+    <div class="pie">
+	<div class="ajustePie">
+    	<div class="logoInferior"><img src="..\Content\images\logo-pie2.jpg" alt="Morenito, tu tienda ciclista online" title="Morenito, tu tienda ciclista online"></div>
+        <div class="direccion">
+        	<p><strong>MORENITO VILLALBA</strong></p>
+
+            <p>AVENIDA REINA VICTORIA,39<br>
+            28439 LOS NEGRALES<br>
+            ALPEDRETE (MADRID)<br>
+            Tel. 91 851 39 38<br>
+            <a href="mailto:madrid@morenito.com">madrid@morenito.com</a></p>
+        </div>
+      <div class="horario">
+        	<p><strong>Horario:</strong></p>
+
+            <p>- Mañanas de 10h. a 14h.<br>
+            - Tardes de 17h. a 20:30h.<br>
+            - Sabados tarde Cerrado</p>
+        </div><!-- horario-->
+        <div class="direccion">
+        	<p><strong>MORENITO TERRASSA</strong></p>
+
+            <p>Ctra. Montcada, Nº398<br>
+            08223 Terrassa (BCN)<br>
+            Tel. 93 785 50 68<br>
+            <a href="mailto:infoterrassa@morenito.com">infoterrassa@morenito.com</a></p>
+        </div>
+        <div class="horario">
+        	<p><strong>Horario:</strong></p>
+
+            <p>- Mañanas de 9:00 a 13:30 <br>
+                - Tardes de 17:00 a 20:30 de Lunes a Viernes <br>
+                - Sábados de 9:00 a 14:00 h.<br></p>
+        </div>
+        <div class="tfnoInferior">
+        		<img src="..\Content\images\tfon_inf.gif" alt="Atenci&oacute;n al cliente 91 851 95 35" title="Atenci&oacute;n al cliente 91 851 95 35">
+
+                <div style="float:left; position:relative; top:-19px; width:52px; left:52px; ">
+                     <a href="http://www.facebook.com/bicicletas.morenito" target="_blank" style="display:block; float:left;">
+	                        <img alt="facebook" width="22" src="..\Content\images\facebook.png">
+	                   </a>
+
+                       <a href="http://www.twitter.com/bicismorenito" target="_blank" style="display:block; float:left; margin-left:5px;">
+	                        <img alt="Morenito" width="22" src="..\Content\images\twitter.png">
+	                   </a>
+                </div>
+
+        </div>
+         <div class="legales">Copyright ® 2010 Morenito&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:abrir('/Content/aviso_legal.html',807,471,'yes')">Aviso legal</a> | <a href="javascript:abrir('/Content/politica.html',807,471,'yes')">Política de privacidad</a> | <a href="javascript:abrir('/Content/datos.html',807,300,'no')">Datos identificativos</a></div>
+    </div>
+</div>
+</body>
+</html>
