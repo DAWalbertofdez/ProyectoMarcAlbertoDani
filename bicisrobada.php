@@ -104,9 +104,9 @@
 <?php
             $conexion=mysqli_connect("localhost", "root", "", "projecte1_bis");
             $acentos=mysqli_query($conexion, "SET NAMES 'utf8'");
-            if(isset($_REQUEST['marca'])){
+            if(isset($_REQUEST['nom'])){
               //  if($_REQUEST['marca']!=""){
-                        $q = "SELECT * FROM anunci WHERE anu_marca LIKE '%$_REQUEST[marca]%' AND anu_ubicacio_robatori LIKE '%$_REQUEST[ubi]%' AND anu_color LIKE '$_REQUEST[color]%' ORDER BY anu_data_robatori AND anu_titol LIKE '%$_REQUEST[nom]%' AND anu_model LIKE '%$_REQUEST[modelo]%'";
+                        $q = "SELECT * FROM anunci WHERE anu_marca LIKE '%$_REQUEST[marca]%' AND anu_ubicacio_robatori LIKE '%$_REQUEST[ubi]%' AND anu_color LIKE '$_REQUEST[color]%' AND anu_titol LIKE '%$_REQUEST[nom]%' AND anu_model LIKE '%$_REQUEST[modelo]%' ORDER BY anu_data_robatori";
               //  } else {
               //          $q = "SELECT * FROM anunci ORDER BY anu_data_robatori DESC";
                // }
